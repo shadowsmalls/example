@@ -1,0 +1,328 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Visite Agora...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <header>
+        <nav class="navegacao">
+            <a href="index.html">Pág. Inicial</a>
+        <a href="Sobre.html">About</a>
+        </nav>
+        </header>
+
+<div class="fundo-img"></div>
+
+        <div class="fundo-maior">
+<div class="content-esq">
+    <h2>UM NOVO MUNDO AO SEU ALCANCE!</h2>
+    <p>Trazemos uma variedade de conteúdos e desafios para si.</p>
+    <p>Faça já o login caso seja membro, e se não, o cadastro.</p>
+   <div class="p-oculto">
+    <p>Preencha corretamente o que lhe é solicitado.</p>
+    <p>As informações armazenadas serão encriptadas, pois,
+         é importante proteger seus dados pessoais.</p>
+</div>
+   <div class="p-oculto2">
+    <p>
+        Agora, defina a sua palavra passe. 
+        Certifique-se que seja dificil de ser copiado
+         por alguém, e, fácil de ser lembrado por si!
+        </p>
+</div>
+
+
+</div>
+
+<div class="content-dir">
+<div class="login-box">
+    <form action="#">
+<h2>Login</h2>
+
+<div class="input-box">
+    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+    <input type="email" required>
+    <label>Email</label>
+</div>
+
+<div class="input-box">
+    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+    <input type="password" required>
+    <label>Password</label>
+</div>
+
+<div class="esq">
+    <label><input type="checkbox">Lembrar-me </label>
+    <a href="#">Esqueceu a passe?</a>
+</div>
+<button type="submit" class="btn-login" >Login</button>
+
+<div class="log-cad">
+    <p>Não tem uma conta? 
+        <a href="#" class="cadastro-link">Clique Aqui</a>
+     </p>
+</div>
+    </form>
+</div>
+
+<div class="cad-box">
+    <form action="#">
+<h2>Criar Conta</h2>
+
+<div class="input-box">
+    <span class="icon"><ion-icon name="person"></ion-icon></span>
+    <input type="text" required>
+    <label>Nome</label>
+</div>
+
+<div class="input-box">
+    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+    <input type="email" required>
+    <label>Email</label>
+</div>
+
+<div class="input-bo">
+    <span class="icon"></span> 
+     <p>Gênero:
+    <input type="radio" required>
+    <label>Male</label> 
+    <input type="radio" required> <label>Female</label>
+</p>
+<label>Data de nasc.</label>
+<input type="date" required>
+</div>
+
+
+
+<div class="box-edit">
+
+    <div class="input-box">
+    <span class="icon"><ion-icon name="call"></ion-icon></span>
+    <input type="tel" maxlength="9"   required>
+    <label>Nº tel.</label>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<button type="submit" class="btn-next" required>Seguinte</button>
+<div class="log-cad">
+    <p>Voltar para o
+        <a href="#" class="login-link">login</a>
+     </p>
+</div>
+    </form>
+</div>
+
+
+<div class="cad-box2">
+
+    <button class="retroceder">
+<span><ion-icon name="arrow-back"></ion-icon></span>
+
+
+    </button>
+  
+    <form action="#">
+<h2>Criar Conta</h2>
+<div class="input-box">
+    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+    <input type="password" required>
+    <label>Password</label>
+</div>
+<div class="esq">
+    <label><input type="checkbox">Prometo utilizar a conta para fins contrutivos. </label>
+</div>
+<button type="submit" class="btn-cad" >Criar Conta</button>
+
+<div class="log-cad">
+    <p>Voltar para o
+        <a href="#" class="login-link2">login</a>
+     </p>
+</div>
+    </form>
+     </div>
+</div>
+        </div>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+<style>
+
+@media (min-width:1000px) and  (max-width:1200px) {
+
+
+header {
+padding: 25px 12%;
+}
+
+.fundo-maior {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 550px;
+}
+.content-esq 
+{
+    position: absolute;
+    top: 0;
+   text-align: center;
+    width: 58%;
+    height: 100%;
+    color: white;
+  
+}
+.content-dir{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+overflow: hidden;
+    transition: ease 0.5s;
+}
+
+.retroceder {
+    top: -48%;
+    left: -15%;
+}
+
+}
+
+
+
+
+
+@media (min-width:680px) and  (max-width:1000px) {
+header {
+padding: 20px 6%;
+
+}
+.fundo-img{
+    height: 100vh;
+    width: 150vh;
+    filter: blur(20px);
+ 
+}
+.navegacao a {
+    font-size: 16px;
+    color: white;
+    margin-right: 80px;
+}
+
+.fundo-maior {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 500px;
+
+}
+.content-esq 
+{
+    color: transparent;
+}
+.content-dir{
+    width: calc(100%);
+}
+
+ .input-box {
+    width: 340px;
+ }
+
+.input-bo {
+    width: 300px;
+}
+
+
+.input-box .icon {
+    right: -3%;
+    font-size:17px;
+}
+
+.retroceder {
+  display: block;
+  top: -99%;
+}
+}
+
+@media  (max-width:680px) {
+
+
+header {
+padding: 20px 6%;
+
+}
+.fundo-img{
+    height: 100vh;
+    width: 150vh;
+    filter: blur(2px);
+ 
+}
+.navegacao a {
+    font-size: 16px;
+    color: white;
+    margin-right: 80px;
+}
+
+.fundo-maior {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 500px;
+
+}
+.content-esq 
+{
+    color: transparent;
+}
+.content-dir{
+    width: calc(100%);
+}
+
+ .input-box {
+    width: 340px;
+ }
+
+.input-bo {
+    width: 300px;
+}
+
+
+.input-box .icon {
+    right: -3%;
+    font-size:17px;
+}
+
+.retroceder {
+    display: block;
+    top: -99%;
+}
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+</html>
